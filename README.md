@@ -11,12 +11,3 @@
 This repository contains a static landing page converted from the provided Figma design. The goal of the assignment was to produce a pixel-accurate, accessible, and responsive implementation using **vanilla HTML, CSS and JavaScript**. The build focuses on maintainability and a structure that can be reproduced in Webflow if required.
 
 ---
-
-## Demo / Preview
-
-To preview locally:
-
-```bash
-# from repository root
-python -m http.server 8080
-# then open http://localhost:8080 in your browser
