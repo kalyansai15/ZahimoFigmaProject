@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Visio-Experts — Landing</title>
+  <meta name="description" content="Visio-Experts landing page converted from Figma" />
+  <link rel="icon" href="assets/favicon-vision 1.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Visio-Experts – home">
+        <img src="assets/Logo-visio-expert-noir 2.png" alt="Visio-Experts logo" class="logo" />
+      </a>
+
+      <nav class="primary-nav" role="navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#solutions" data-en="Solutions" data-fr="Solutions">Solutions</a></li>
+          <li><a href="#pricing" data-en="Pricing" data-fr="Tarifs">Pricing</a></li>
+          <li><a href="#testimonials" data-en="Reviews" data-fr="Avis">Reviews</a></li>
+          <li><a href="#faq" data-en="FAQ" data-fr="FAQ">FAQ</a></li>
+          <li><a href="#login" data-en="Sign In" data-fr="Se connecter">Sign In</a></li>
+        </ul>
+        <a class="btn cta" href="#apply"><span class="i18n" data-en="Get Started" data-fr="Commencer">Get Started</span><span class="notification-badge">1</span></a>
+        <div class="lang-switch" aria-hidden="false">
+          <button class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+          <button class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+        </div>
+      </nav>
+
+      <!-- Mobile menu button (JS toggles aria-expanded & visibility of #mobileNav) -->
+      <button id="mobileMenuBtn" class="mobile-toggle i18n" data-aria="true" data-en="Open menu" data-fr="Ouvrir le menu" aria-controls="mobileNav" aria-expanded="false" aria-label="Open menu">
+        <span aria-hidden="true">☰</span>
+      </button>
+    </div>
+
+    <!-- Mobile navigation (hidden by default, show with JS) -->
+    <div id="mobileNav" class="mobile-nav" hidden>
+      <a href="#solutions" class="i18n" data-en="Solutions" data-fr="Solutions">Solutions</a>
+      <a href="#pricing" class="i18n" data-en="Pricing" data-fr="Tarifs">Pricing</a>
+      <a href="#testimonials" class="i18n" data-en="Reviews" data-fr="Avis">Reviews</a>
+      <a href="#faq" class="i18n" data-en="FAQ" data-fr="FAQ">FAQ</a>
+      <a href="#login" class="i18n" data-en="Sign In" data-fr="Se connecter">Sign In</a>
+      <a class="btn cta i18n" data-en="Get Started" data-fr="Commencer" href="#apply">Get Started</a>
+    </div>
+  </header>
+
+  <main id="main" role="main">
+
+    <!-- ========== HERO ========== -->
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <!-- Text column -->
+        <div class="hero-content">
+          <!-- NEWS Badge -->
+          <div class="news-badge">
+            <div class="news-badge-inner">
+              <div class="news-label">
+                <div class="news-text" data-en="NEWS" data-fr="ACTUALITÉS">NEWS</div>
+                </div>
+                <div class="news-description" data-en="3x faster soon with AI" data-fr="Bientôt 3× plus rapide grâce à l'IA">3x faster soon with AI</div>
+            </div>
+          </div>
+
+          <h1 data-en="The all-in-one solution for your video conferences" data-fr="La solution tout-en-un pour vos visioconférences">The all-in-one solution for your video conferences</h1>
+          <p class="lead" data-en="Collect, exchange, organize: offer a fluid and secure experience to your clients, online and without download." data-fr="Collectez, échangez, organisez : offrez à vos clients une expérience fluide et sécurisée, en ligne et sans téléchargement.">Collect, exchange, organize: offer a fluid and secure experience to your clients, online and without download.</p>
+
+          <div class="hero-cta">
+            <a class="btn primary" href="#apply">
+              <div class="btn-label i18n" data-en="Start for free" data-fr="Commencez gratuitement">Start for free</div>
+            </a>
+          </div>
+
+          <div class="rating-section">
+            <div class="google-logo">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path d="M17.64 9.20454C17.64 8.56636 17.5827 7.95272 17.4764 7.36363H9V10.845H13.8436C13.635 11.97 13.0009 12.9231 12.0477 13.5613V15.8195H14.9564C16.6582 14.2527 17.64 11.9454 17.64 9.20454Z" fill="#4285F4"/>
+                <path d="M9 18C11.43 18 13.467 17.1941 14.9564 15.8195L12.0477 13.5613C11.2418 14.1013 10.2109 14.4204 9 14.4204C6.65591 14.4204 4.67182 12.8372 3.96409 10.71H0.957275V13.0418C2.43818 15.9831 5.48182 18 9 18Z" fill="#34A853"/>
+                <path d="M3.96409 10.71C3.78409 10.17 3.68182 9.59318 3.68182 9C3.68182 8.40682 3.78409 7.83 3.96409 7.29V4.95818H0.957275C0.347727 6.17318 0 7.54773 0 9C0 10.4523 0.347727 11.8268 0.957275 13.0418L3.96409 10.71Z" fill="#FBBC05"/>
+                <path d="M9 3.57955C10.3214 3.57955 11.5077 4.03364 12.4405 4.92545L15.0218 2.34409C13.4632 0.891818 11.4259 0 9 0C5.48182 0 2.43818 2.01682 0.957275 4.95818L3.96409 7.29C4.67182 5.16273 6.65591 3.57955 9 3.57955Z" fill="#EA4335"/>
+              </svg>
+            </div>
+            <div class="rating-text i18n" data-en="Google Rating" data-fr="Note Google">Google Rating</div>
+            <div class="stars-reviews">
+              <div class="star">
+                <div class="star-icon"></div>
+              </div>
+              <div class="star">
+                <div class="star-icon"></div>
+              </div>
+              <div class="star">
+                <div class="star-icon"></div>
+              </div>
+              <div class="star">
+                <div class="star-icon"></div>
+              </div>
+              <div class="star">
+                <div class="star-icon"></div>
+              </div>
+            </div>
+            <div class="rating-value i18n" data-en="4.8 | +1 600 satisfied users" data-fr="4,8 | Plus de 1 600 utilisateurs satisfaits">4.8 | +1 600 satisfied users</div>
+          </div>
+        </div>
+
+        <!-- Hero Images -->
+        <div class="hero-images">
+          <!-- Left Image with Revenue Card -->
+          <div class="hero-left-container">
+            <div class="hero-left-image">
+              <img src="assets/look-studio-pccGXVm8XVM-unsplash 2.jpg" alt="Left screen example" />
+            </div>
+            <div class="hero-card left">
+              <div class="card-content">
+                <div class="card-header">
+                  <div class="card-title">Total amount invoiced</div>
+                  <div class="card-value">€3,789.00</div>
+                </div>
+                <div class="chart-container">
+                  <div class="chart-bar"></div>
+                  <div class="chart-bar"></div>
+                  <div class="chart-bar"></div>
+                  <div class="chart-bar"></div>
+                  <div class="chart-bar"></div>
+                  <div class="chart-labels">
+                    <div class="chart-label">Jan</div>
+                    <div class="chart-label">Feb</div>
+                    <div class="chart-label">Mar</div>
+                    <div class="chart-label">Apr</div>
+                    <div class="chart-label">May</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Image with Calendar Card -->
+          <div class="hero-right-container">
+            <div class="hero-right-image">
+              <img src="assets/getty-images-yqEQoBF-kbU-unsplash 1.jpg" alt="Right screen example" />
+            </div>
+            <div class="hero-card right">
+              <div class="calendar-header">
+                <div class="calendar-date">
+                  <div class="date-badge">
+                    <div class="date-content">
+                      <div class="date-month">Feb</div>
+                      <div class="date-day">22</div>
+                    </div>
+                  </div>
+                  <div class="event-details">
+                    <div class="event-info">
+                      <div class="event-title">Individual Coaching</div>
+                      <div class="event-time">
+                        <div class="scheduled-badge">
+                          <div class="scheduled-text">Scheduled</div>
+                        </div>
+                        <div class="time-text">Feb 22, 12 - 12:30 PM PT</div>
+                      </div>
+                      <div class="event-meta">
+                        <div class="meta-name">David Menard</div>
+                        <div class="meta-separator">•</div>
+                        <div class="meta-week">Week 4/8</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar-icon">
+                  <img src="assets/image.png" alt="Calendar icon" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Partners Section -->
+      <div class="partners" aria-hidden="false">
+        <img src="assets/VonageP2OE_Primary-cd88406d-8e72-485e-8615-8f4b1993b330 1 1.png" alt="Partner 1" class="partner-logo " />
+        <img src="assets/Strip2e-Logo 1 1.png" alt="Partner 2" class="partner-logo" />
+        <img src="assets/brandmark-design (3) 1.png" alt="Partner 3" class="partner-logo" />
+        <img src="assets/Heroku_logo.sv2g 1 1.png" alt="Partner 4" class="partner-logo" />
+      </div>
+    </section>
+
+ 
+
+    <!-- ========== PAYMENT SECTION ========== -->
+    <section id="payment" class="payment-section">
+      <div class="container">
+        <!-- Feature Tabs -->
+        <div class="feature-tabs">
+          <div class="tab active i18n" data-en="Online Payment" data-fr="Paiement en ligne">Online Payment</div>
+          <div class="tab i18n" data-en="Secure Video" data-fr="Vidéo sécurisée">Secure Video</div>
+          <div class="tab i18n" data-en="Notes & Reports" data-fr="Notes et comptes-rendus">Notes & Reports</div>
+          <div class="tab i18n" data-en="Made in France" data-fr="Fabriqué en France">Made in France</div>
+        </div>
+
+        <!-- Content Grid -->
+        <div class="payment-content">
+          <!-- Text Column -->
+          <div class="payment-text">
+            <div class="text-content">
+              <h2 class="i18n" data-en="Integrated online payment" data-fr="Paiement en ligne intégré">Integrated online payment</h2>
+              <p class="i18n" data-en="Request payment before, during or after the video call, by credit card, via a secure link directly integrated into your appointment." data-fr="Demandez le paiement avant, pendant ou après la visioconférence — par carte, via un lien sécurisé intégré directement à votre rendez‑vous.">Request payment before, during or after the video call, by credit card, via a secure link directly integrated into your appointment.</p>
+              
+              <div class="features-list">
+                <div class="feature-item">
+                  <div class="feature-icon payment-icon"></div>
+                  <span class="i18n" data-en="Card payment without installation or terminal" data-fr="Paiement par carte sans installation ni terminal">Card payment without installation or terminal</span>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-icon edit-icon"></div>
+                  <span class="i18n" data-en="Customizable payment link" data-fr="Lien de paiement personnalisable">Customizable payment link</span>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-icon fullscreen-icon"></div>
+                  <span class="i18n" data-en="Payment tracking in your interface" data-fr="Suivi des paiements depuis votre interface">Payment tracking in your interface</span>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-icon activity-icon"></div>
+                  <span class="i18n" data-en="Compatible with all service activities" data-fr="Compatible avec toutes les activités de service">Compatible with all service activities</span>
+                </div>
+              </div>
+            </div>
+            
+            <button class="btn primary i18n" data-en="Learn more" data-fr="En savoir plus">Learn more</button>
+          </div>
+
+          <!-- Mockup Column -->
+          <div class="payment-mockup">
+            <div class="mockup-container">
+              <div class="phone-frame">
+                <div class="phone-screen">
+                  <!-- Status Bar -->
+                  <div class="status-bar">
+                    <div class="status-left">
+                      <span class="time">9:41</span>
+                    </div>
+                    <div class="status-right">
+                      <div class="signal-icon"></div>
+                      <div class="wifi-icon"></div>
+                      <div class="battery-icon"></div>
+                    </div>
+                  </div>
+
+                  <!-- App Header -->
+                  <div class="app-header">
+                    <div class="app-title">Visio-Experts</div>
+                    <div class="client-selector">
+                      <span>My client</span>
+                      <div class="dropdown-icon"></div>
+                    </div>
+                  </div>
+
+                  <!-- Payment Interface -->
+                  <div class="payment-interface">
+                    <div class="amount-section">
+                      <div class="currency-selector">
+                        <span>EUR</span>
+                        <div class="dropdown-icon"></div>
+                      </div>
+                      <div class="amount-display">
+                        <span class="currency-symbol">€</span>
+                        <span class="amount">255</span>
+                      </div>
+                      <div class="payment-indicator"></div>
+                    </div>
+                    
+                    <div class="payment-button">
+                      <div class="button-icon"></div>
+                      <span>Send</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ADOPTION SECTION ========== -->
+    <section id="adoption" class="adoption-section">
+      <h2 class="i18n" data-en="Adopted by thousands of independent professionals" data-fr="Adopté par des milliers de professionnels indépendants">Adopted by thousands of independent professionals</h2>
+      <div class="container">
+        
+        
+                <!-- Cards Row -->
+          <div class="carousel-wrapper">
+                  <div class="cards-container">
+          <article class="profession-card">
+            <div class="card-image">
+              <img src="assets/getty-images-E9dRjUyuLuo-unsplash 1.jpg" alt="Independent & freelance" />
+              <div class="card-overlay"></div>
+            </div>
+            <h3 class="i18n" data-en="Independent & freelance" data-fr="Indépendants & freelances">Independent & freelance</h3>
+          </article>
+          <article class="profession-card">
+            <div class="card-image">
+              <img src="assets/getty-images-fiN4i7CjK6c-unsplash 1.jpg" alt="Coach & consultant" />
+              <div class="card-overlay"></div>
+            </div>
+            <h3 class="i18n" data-en="Coach & consultant" data-fr="Coachs & consultants">Coach & consultant</h3>
+          </article>
+          
+          <article class="profession-card">
+            <div class="card-image">
+              <img src="assets/daria-pimkina-_y6eXJEkEg8-unsplash (1) 2 1.png" alt="Wellness practitioner" />
+              <div class="card-overlay"></div>
+            </div>
+            <h3 class="i18n" data-en="Wellness practitioner" data-fr="Praticiens du bien‑être">Wellness practitioner</h3>
+          </article>
+          
+          <article class="profession-card">
+            <div class="card-image">
+              <img src="assets/andrej-lisakov-a9AOCPBIabk-unsplash 1.jpg" alt="Therapist & psychologist" />
+              <div class="card-overlay"></div>
+            </div>
+            <h3 class="i18n" data-en="Therapist & psychologist" data-fr="Thérapeutes & psychologues">Therapist & psychologist</h3>
+          </article>
+          
+          <article class="profession-card">
+            <div class="card-image">
+              <img src="assets/ahmet-kurt-t1cild5OmhA-unsplash 1.jpg" alt="Liberal profession" />
+              <div class="card-overlay"></div>
+            </div>
+            <h3 class="i18n" data-en="Liberal profession" data-fr="Professions libérales">Liberal profession</h3>
+          </article>
+        </div>
+          <!-- Navigation Controls (moved inside wrapper so controls are scoped) -->
+          <div class="carousel-controls">
+            
+            <button class="carousel-btn prev" aria-label="Previous">
+              <div class="btn-icon left"></div>
+            </button>
+            <button class="carousel-btn next" aria-label="Next">
+              <div class="btn-icon right"></div>
+            </button>
+          </div>
+       </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS SECTION (from Figma) ========== -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="container testimonials-layout">
+        <!-- Left column: heading + description -->
+        <div class="testimonials-intro">
+          <h2 class="i18n" data-en="How Visio‑Experts simplified their daily work" data-fr="Ils ont simplifié leur quotidien avec Visio‑Experts">Ils ont simplifié leur quotidien avec Visio‑Experts</h2>
+          <p class="i18n" data-en="Coaches, therapists, consultants… hundreds of professionals already use our solution to save time, collect payments faster, and retain clients better." data-fr="Coachs, thérapeutes, consultants… ils sont déjà des centaines à utiliser notre solution pour gagner du temps, encaisser plus vite et mieux fidéliser leurs clients.">Coachs, thérapeutes, consultants… ils sont déjà des centaines à utiliser notre solution pour gagner du temps, encaisser plus vite et mieux fidéliser leurs clients.</p>
+        </div>
+
+        <!-- Right column: slider -->
+        <div class="testimonials-slider">
+          <div class="testimonials-wrapper">
+            <div class="testimonials-container">
+              <!-- Testimonial 1 -->
+              <article class="testimonial-card">
+                <div class="stars" aria-hidden="true">
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                </div>
+                <p class="testimonial-text i18n" data-en="I use Visio‑Experts for all my one-to-one sessions. The interface is so simple, I get paid before the call and never chase payments anymore." data-fr="J’utilise Visio‑Experts pour toutes mes séances individuelles. L’interface est ultra simple, je suis payé avant la visio, et je n’ai plus à courir après les règlements.">J’utilise Visio‑Experts pour toutes mes séances individuelles. L’interface est ultra simple, je suis payé avant la visio, et je n’ai plus à courir après les règlements.</p>
+                <div class="testimonial-meta">
+                  <div class="avatar"><img src="assets/image 37.png" alt="Sophie D."></div>
+                  <div class="meta-text">
+                    <div class="name">Sophie D.</div>
+                    <div class="role">Coach en développement personnel</div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Testimonial 2 -->
+              <article class="testimonial-card">
+                <div class="stars" aria-hidden="true">
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                </div>
+                <p class="testimonial-text i18n" data-en="My clients love it — no account required, just a link. I save time on every appointment; everything runs smoothly." data-fr="Mes clients sont ravis : aucun compte à créer, juste un lien. Et moi je gagne du temps à chaque rendez‑vous, tout est fluide.">Mes clients sont ravis : aucun compte à créer, juste un lien. Et moi je gagne du temps à chaque rendez‑vous, tout est fluide.</p>
+                <div class="testimonial-meta">
+                  <div class="avatar"><img src="assets/image 37.png" alt="Nicolas B."></div>
+                  <div class="meta-text">
+                    <div class="name">Nicolas B.</div>
+                    <div class="role">Hypnothérapeute</div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Testimonial 3 -->
+              <article class="testimonial-card">
+                <div class="stars" aria-hidden="true">
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                </div>
+                <p class="testimonial-text i18n" data-en="I tried Zoom, Meet, WhatsApp… None of them is as thoughtfully built for professionals as Visio‑Experts. Everything is integrated and support is very responsive." data-fr="J’ai testé Zoom, Meet, WhatsApp… Aucun outil n’est aussi bien pensé pour les pros que Visio‑Experts. Tout est intégré, et le support est hyper réactif.">J’ai testé Zoom, Meet, WhatsApp… Aucun outil n’est aussi bien pensé pour les pros que Visio‑Experts. Tout est intégré, et le support est hyper réactif.</p>
+                <div class="testimonial-meta">
+                  <div class="avatar"><img src="assets/image 37.png" alt="Camille R."></div>
+                  <div class="meta-text">
+                    <div class="name">Camille R.</div>
+                    <div class="role">Consultante</div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Testimonial 4 -->
+              <article class="testimonial-card">
+                <div class="stars" aria-hidden="true">
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                </div>
+                <p class="testimonial-text i18n" data-en="Finally a GDPR-compliant, secure video tool with a client area in my name. It’s professional, simple and reassuring." data-fr="Enfin une visio conforme RGPD, sécurisée, avec un espace client à mon nom. C’est pro, simple et rassurant.">Enfin une visio conforme RGPD, sécurisée, avec un espace client à mon nom. C’est pro, simple et rassurant.</p>
+                <div class="testimonial-meta">
+                  <div class="avatar"><img src="assets/image 37.png" alt="Claire L."></div>
+                  <div class="meta-text">
+                    <div class="name">Claire L.</div>
+                    <div class="role">Psychologue clinicienne</div>
+                  </div>
+                </div>
+              </article>
+            </div>
+              <!-- Controls (JS expects .testimonial-btn.prev / .testimonial-btn.next) -->
+              <div class="testimonial-controls">
+                <button class="testimonial-btn prev" aria-label="Previous testimonial">
+                  <div class="btn-icon left"></div>
+                </button>
+                <button class="testimonial-btn next" aria-label="Next testimonial">
+                  <div class="btn-icon right"></div>
+                </button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+        <!-- ========== FAQ / QUESTIONS FRÉQUENTES (Accordion from Figma) ========== -->
+    <section id="faq" class="faq-section">
+      <div class="container faq-inner">
+  <h2 class="faq-title i18n" data-en="Frequently Asked Questions" data-fr="Questions fréquentes">Questions fréquentes</h2>
+
+        <div class="faq-columns">
+          <div class="faq-column">
+            <div class="faq-item">
+              <button class="faq-toggle" aria-expanded="false">
+                <span class="faq-question i18n" data-en="How is my sensitive data handled?" data-fr="Comment sont gérés mes données confidentielles ?">Comment sont gérés mes données confidentielles ?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p class="i18n" data-en="Sensitive data (reports, documents, payments, histories) are hosted on servers located in France. Video calls are end-to-end encrypted with no recordings or access by Visio-Experts. Payments are processed by Stripe Connect (PCI DSS certified) and handled in compliance with GDPR via Stripe Payments Europe." data-fr="Vos données sensibles (comptes‑rendus, documents, paiements, historiques) sont stockées sur des serveurs situés en France. Les visioconférences sont chiffrées de bout en bout, sans enregistrement ni accès possible par Visio‑Experts. Les paiements sont gérés par Stripe Connect, acteur certifié PCI DSS et conforme RGPD via Stripe Payments Europe.">Vos données sensibles (comptes‑rendus, documents, paiements, historiques) sont stockées sur des serveurs situés en France. Les visioconférences sont chiffrées de bout en bout, sans enregistrement ni accès possible par Visio‑Experts. Les paiements sont gérés par Stripe Connect, acteur certifié PCI DSS et conforme RGPD via Stripe Payments Europe.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-toggle" aria-expanded="false">
+                <span class="faq-question">Question 2</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-toggle" aria-expanded="false">
+                <span class="faq-question">Question 3</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-column">
+            <div class="faq-item">
+              <button class="faq-toggle" aria-expanded="false">
+                <span class="faq-question">Question 4</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Lorem ipsum dolor sit amet consectetur. Lacus adipiscing duis at tristique suspendisse.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-toggle" aria-expanded="false">
+                <span class="faq-question">Question 5</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Ut ligula amet imperdiet elit. Enim non tellus bibendum tempus rutrum tincidunt.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-toggle" aria-expanded="false">
+                <span class="faq-question">Question 6</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Orci amet neque tristique facilisis sed vehicula sed. Elementum cras ac sagittis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ========== CTA / DARK FOOTER (from Figma) ========== -->
+    <section id="cta-dark" class="cta-dark">
+      <div class="container cta-dark-inner">
+        <div class="cta-dark-top">
+          <h2 class="cta-dark-title i18n" data-en="Ready? Open your account in 2 minutes." data-fr="Prêt(e) ? Ouvrez votre compte en 2 min.">Prêt(e) ? Ouvrez votre compte en 2 min.</h2>
+          <p class="cta-dark-lead i18n" data-en="Make your clients' daily life easier while invoicing your fees directly from Visio-Experts." data-fr="Simplifiez le quotidien de vos clients tout en facturant facilement vos honoraires depuis Visio-Experts.">Simplifiez le quotidien de vos clients tout en facturant facilement vos honoraires depuis Visio-Experts.</p>
+
+          <div class="cta-dark-actions">
+            <a class="btn cta-dark-btn primary i18n" data-en="Start for free" data-fr="Commencer gratuitement" href="#apply">Commencer gratuitement</a>
+            <a class="btn cta-dark-btn ghost i18n" data-en="Book a demo" data-fr="Réserver une démo" href="#demo">Réserver une démo</a>
+          </div>
+        </div>
+
+        <div class="cta-dark-bottom">
+          <div class="cta-brand-col">
+            <img src="assets/Logo-visio-expert-noir 2.png" alt="Visio-Experts" class="cta-brand" />
+            <p class="cta-support i18n" data-en="Customer support, Mon–Fri 8:00–18:00 via email and chat." data-fr="Service client du lundi au vendredi de 8h à 18h par e-mail et tchat.">Service client du lundi au vendredi de 8h à 18h par e-mail et tchat.</p>
+
+            <div class="cta-rating">
+              <div class="star-row">
+                <span class="star small" aria-hidden="true"></span>
+                <span class="star small" aria-hidden="true"></span>
+                <span class="star small" aria-hidden="true"></span>
+                <span class="star small" aria-hidden="true"></span>
+                <span class="star small" aria-hidden="true"></span>
+              </div>
+              <div class="rating-text">Excellent | 4.8 sur plus de 16 avis</div>
+             
+            </div>
+            <div class="last">
+              <div class="google-logo">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path d="M17.64 9.20454C17.64 8.56636 17.5827 7.95272 17.4764 7.36363H9V10.845H13.8436C13.635 11.97 13.0009 12.9231 12.0477 13.5613V15.8195H14.9564C16.6582 14.2527 17.64 11.9454 17.64 9.20454Z" fill="#4285F4"/>
+                <path d="M9 18C11.43 18 13.467 17.1941 14.9564 15.8195L12.0477 13.5613C11.2418 14.1013 10.2109 14.4204 9 14.4204C6.65591 14.4204 4.67182 12.8372 3.96409 10.71H0.957275V13.0418C2.43818 15.9831 5.48182 18 9 18Z" fill="#34A853"/>
+                <path d="M3.96409 10.71C3.78409 10.17 3.68182 9.59318 3.68182 9C3.68182 8.40682 3.78409 7.83 3.96409 7.29V4.95818H0.957275C0.347727 6.17318 0 7.54773 0 9C0 10.4523 0.347727 11.8268 0.957275 13.0418L3.96409 10.71Z" fill="#FBBC05"/>
+                <path d="M9 3.57955C10.3214 3.57955 11.5077 4.03364 12.4405 4.92545L15.0218 2.34409C13.4632 0.891818 11.4259 0 9 0C5.48182 0 2.43818 2.01682 0.957275 4.95818L3.96409 7.29C4.67182 5.16273 6.65591 3.57955 9 3.57955Z" fill="#EA4335"/>
+              </svg>
+            </div>
+              <div class="rating-text2 i18n" data-en="Google Rating" data-fr="Note Google">Google Rating</div>
+            </div>
+             
+
+            <div class="cta-socials">
+              <a class="social facebook" href="#" aria-label="Facebook" title="Facebook"></a>
+              <a class="social twitter" href="#" aria-label="Twitter" title="Twitter"></a>
+              <a class="social linkedin" href="#" aria-label="LinkedIn" title="LinkedIn"></a>
+            </div>
+
+            
+          </div>
+
+          <div class="cta-links-col">
+            <div class="links-block">
+              <h4 class="i18n" data-en="COMPANY" data-fr="ENTREPRISE">ENTREPRISE</h4>
+              <ul>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+              </ul>
+            </div>
+
+            <div class="links-block">
+              <h4 class="i18n" data-en="PRODUCT" data-fr="PRODUIT">PRODUIT</h4>
+              <ul>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-dark-footer">
+          <hr class="cta-sep" />
+          <div class="cta-footer-row">
+            <div class="copyright i18n" data-en="©2025 Visio-Experts — All rights reserved. • Website by agency Bouns." data-fr="©2025, Visio-Experts &nbsp; - Tous droits réservés. • Site web réalisé par l'agence Bouns :).">©2025, Visio-Experts &nbsp; - Tous droits réservés. • Site web réalisé par l'agence Bouns :).</div>
+            <div class="footer-links">
+              <a href="#">CGU</a>
+              <a href="#">Mentions légales</a>
+              <a href="#">Politique de confidentialité</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
+ 

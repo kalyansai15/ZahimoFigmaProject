@@ -1,0 +1,203 @@
+/* styles.figma.mobile.css
+   Cleaned mobile overrides exported from Figma.
+   This file contains only the mobile-focused rules that were appended into
+   `styles.css`. Loading this file is optional — you can @import it from
+   `styles.css` or include it as a separate <link> in your HTML.
+
+   Notes:
+   - These are mobile-first overrides. They assume existing desktop selectors
+     exist in your main `styles.css` and only override where necessary.
+   - If you prefer to enable them only when testing, add a `.figma-mobile`
+     class on <body> and prefix selectors with `.figma-mobile`.
+*/
+
+/* Small phones & narrow devices */
+@media (max-width: 480px) {
+  .header-inner {
+    padding: 10px 12px;
+  }
+  .brand {
+    gap: 8px;
+  }
+  .logo {
+    height: 24px;
+  }
+  .nav-list {
+    display: none;
+  }
+
+  .hero {
+    padding: 28px 12px;
+    gap: 18px;
+    height: auto;
+    margin-left: 0;
+  }
+  .hero-inner {
+    width: 100%;
+    padding: 0;
+  }
+  .hero h1 {
+    font-size: 20px;
+    line-height: 1.08;
+    width: 100%;
+  }
+  .hero .lead {
+    font-size: 13px;
+    max-width: 100%;
+  }
+  .hero-images {
+    display: none !important;
+  }
+
+  .cta-dark {
+    padding: 28px 12px 20px;
+  }
+  .cta-dark-top {
+    max-width: 100%;
+    padding: 0;
+  }
+  .cta-dark-title {
+    font-size: 20px;
+  }
+  .cta-dark-lead {
+    font-size: 13px;
+  }
+  .cta-dark-actions {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .cta-dark-btn {
+    width: 100%;
+    max-width: 100%;
+  }
+  .cta-brand {
+    width: 140px;
+  }
+  .cta-socials {
+    justify-content: center;
+  }
+
+  .partners {
+    position: relative;
+    transform: none;
+    width: 100%;
+    margin: 16px auto;
+    gap: 12px;
+  }
+  .partner-logo {
+    height: 28px;
+    filter: grayscale(100%) brightness(0.14) contrast(1.2);
+  }
+
+  .carousel-wrapper {
+    max-width: 360px;
+    margin: 0 auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .cards-container {
+    display: flex;
+    gap: 12px;
+    padding: 8px;
+    scroll-snap-type: x mandatory;
+    justify-content: center;
+  }
+  .cards-container .profession-card {
+    flex: 0 0 auto;
+    width: 220px;
+    height: 320px;
+    scroll-snap-align: center;
+  }
+  .carousel-controls {
+    bottom: -18px;
+  }
+
+  .testimonials-layout {
+    flex-direction: column;
+    padding: 16px 12px;
+    gap: 18px;
+  }
+  .testimonials-intro h2 {
+    font-size: 22px;
+  }
+  .testimonial-card {
+    width: 100%;
+    max-width: 360px;
+    padding: 16px;
+    height: auto;
+  }
+  .testimonials-container {
+    gap: 14px;
+  }
+  .testimonials-slider + .testimonial-controls {
+    position: static;
+    margin-top: 12px;
+    bottom: auto;
+    transform: none;
+  }
+
+  .cta-socials .social {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+  }
+}
+
+/* Slightly larger phones / small tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .header-inner {
+    padding: 12px 20px;
+  }
+  .logo {
+    height: 28px;
+  }
+  .hero {
+    padding: 40px 16px;
+    gap: 22px;
+  }
+  .hero h1 {
+    font-size: 28px;
+  }
+  .hero .lead {
+    font-size: 14px;
+  }
+
+  .carousel-wrapper {
+    max-width: 520px;
+  }
+  .cards-container {
+    gap: 14px;
+    padding: 12px;
+    justify-content: center;
+  }
+  .cards-container .profession-card {
+    width: 240px;
+    height: 340px;
+  }
+
+  .cta-dark-actions {
+    gap: 12px;
+  }
+  .cta-brand {
+    width: 160px;
+  }
+}
+
+/* Helpers for very small screens */
+@media (max-width: 360px) {
+  .news-badge {
+    width: auto;
+    padding: 6px 8px;
+  }
+  .btn.primary,
+  .btn.cta {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+  .rating-value,
+  .rating-text,
+  .rating-text2 {
+    font-size: 12px;
+  }
+}
